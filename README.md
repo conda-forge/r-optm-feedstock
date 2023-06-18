@@ -1,11 +1,11 @@
-About r-optm
-============
+About r-optm-feedstock
+======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-optm-feedstock/blob/main/LICENSE.txt)
 
 Home: https://CRAN.R-project.org/package=OptM
 
 Package license: GPL-2.0-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-optm-feedstock/blob/main/LICENSE.txt)
 
 Summary: The popular population genetic software 'Treemix' by 'Pickrell and Pritchard' (2012) <DOI:10.1371/journal.pgen.1002967> estimates the number of migration edges on a population tree. However, it can be difficult to determine the number of migration edges to include. Previously, it was customary to stop adding migration edges when 99.8% of variation in the data was explained, but 'OptM' automates this process using an ad hoc statistic based on the second-order rate of change in the log likelihood.  'OptM' also has added functionality for various threshold modeling to compare with the ad hoc statistic.
 
