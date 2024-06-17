@@ -1,4 +1,4 @@
-{% set version = '0.1.6' %}
+{% set version = "0.1.8" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/OptM_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/OptM/OptM_{{ version }}.tar.gz
-  sha256: 9c37f17a04ec1c94d4ca5c276e6fb7895895797e62b0db5f0622e95571716df4
+  sha256: 45348e5ecf84f531c3a3d3fe74f8ba26ecea39df286d46c00553c46cddfdb203
 
 build:
-  merge_build_host: True  # [win]
-  number: 1
+  merge_build_host: true  # [win]
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -41,14 +41,8 @@ test:
 about:
   home: https://CRAN.R-project.org/package=OptM
   license: GPL-2.0-or-later
-  summary: The popular population genetic software 'Treemix' by 'Pickrell and Pritchard' (2012)
-    <DOI:10.1371/journal.pgen.1002967> estimates the number of migration edges on a
-    population tree. However, it can be difficult to determine the number of migration
-    edges to include. Previously, it was customary to stop adding migration edges when
-    99.8% of variation in the data was explained, but 'OptM' automates this process
-    using an ad hoc statistic based on the second-order rate of change in the log likelihood.  'OptM'
-    also has added functionality for various threshold modeling to compare with the
-    ad hoc statistic.
+  summary: The popular population genetic software 'Treemix' by 'Pickrell and Pritchard' (2012) <DOI:10.1371/journal.pgen.1002967> estimates the number of migration edges on a population tree. However, it can be difficult to determine the number of migration edges to include. Previously, it was customary to stop adding migration
+    edges when 99.8% of variation in the data was explained, but 'OptM' automates this process using an ad hoc statistic based on the second-order rate of change in the log likelihood.  'OptM' also has added functionality for various threshold modeling to compare with the ad hoc statistic.
   license_family: GPL2
   license_file:
     - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'
