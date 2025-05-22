@@ -1,4 +1,4 @@
-{% set version = "0.1.8" %}
+{% set version = "0.1.9" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/OptM_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/OptM/OptM_{{ version }}.tar.gz
-  sha256: 45348e5ecf84f531c3a3d3fe74f8ba26ecea39df286d46c00553c46cddfdb203
+  sha256: 3760ea282534c7010114fe731371b254e58cb6f5204c45edc0b7859697db11f2
 
 build:
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
